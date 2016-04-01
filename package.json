@@ -1,0 +1,25 @@
+{
+  "name": "gt-color-picker",
+  "version": "1.0.0",
+  "description": "AngularJS color picker directive based on flexi-color-picker",
+  "main": "gt-color-picker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gutenberg-Technology/gt-color-picker.git"
+  },
+  "keywords": [
+    "angularjs",
+    "color",
+    "picker",
+    "directive"
+  ],
+  "author": "Christophe Gourmelon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gutenberg-Technology/gt-color-picker/issues"
+  },
+  "homepage": "https://github.com/Gutenberg-Technology/gt-color-picker#readme"
+}
