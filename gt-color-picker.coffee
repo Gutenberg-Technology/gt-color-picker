@@ -1,4 +1,4 @@
-angular.module('gt.colorpicker').directive 'gtColorPicker', ($parse) ->
+angular.module('gt.colorpicker', []).directive 'gtColorPicker', ($parse) ->
 
     _hexToRgba = (color) ->
         if color.length is 4 # #eee vs #eeeeee
@@ -31,7 +31,7 @@ angular.module('gt.colorpicker').directive 'gtColorPicker', ($parse) ->
         opacity: '@'
         showInput: '='
         inlinePicker: '='
-    templateUrl: '/gtColorPicker.html'
+    templateUrl: 'gt-color-picker.html'
 
     link: (scope, elem, attrs) ->
 
