@@ -1,6 +1,6 @@
 {
   "name": "gt-color-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AngularJS color picker directive based on flexi-color-picker",
   "main": "gt-color-picker.js",
   "scripts": {
