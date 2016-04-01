@@ -27,7 +27,7 @@
     "package.json"
   ],
   "dependencies": {
-    "angular": "1.4.9",
+    "angular": "~1.x.x",
     "flexi-color-picker": "git://github.com/DavidDurman/FlexiColorPicker.git"
   }
 }
