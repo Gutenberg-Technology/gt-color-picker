@@ -1,0 +1,101 @@
+.gt-color-picker
+
+    position: relative
+
+    $input-height: 24px
+    $grey: gray
+
+    .color-picker-container
+        position: absolute
+        white-space: nowrap
+        background: white
+        padding: 5px
+        border-radius: 3px
+        box-shadow: 0 2px 5px rgba(black, .5)
+        z-index: 200
+
+        & > .color-picker-color
+            height: 100px
+
+    input[type="text"]
+        margin: 5px 0 0
+        height: 25px
+        width: 150px
+
+    &[disabled] .color-picker-button
+        cursor: not-allowed
+
+    .color-picker-button
+        height: $input-height
+        width: $input-height
+        border: 1px solid rgba(black, .3)
+        cursor: pointer
+
+    .picker-wrapper,
+    .slide-wrapper
+        position: relative
+        display: inline-block
+        cursor: crosshair
+        height: 100px
+
+    .picker,
+    .slide
+        height: 100%
+
+    .picker-wrapper
+        width: 130px
+
+    .slide-wrapper
+        width: 15px
+        margin-left: 5px
+
+    .picker-indicator,
+    .slide-indicator
+        position: absolute
+        left: 0
+        top: 0
+        pointer-events: none
+
+    .picker-indicator
+        width: 3px
+        height: 3px
+        border: 1px solid black
+        background-color: white
+
+    .slide-indicator
+        width: 100%
+        height: 2px
+        left: 0
+        background-color: black
+
+    .alpha-label
+        font-size: 11px
+        margin-top: 4px
+
+    .alpha-value
+        font-size: 11px
+        float: right
+
+    .alpha
+        position: relative
+        height: 10px
+        cursor: pointer
+
+        &:before
+            position: absolute
+            content: ' '
+            top: 4px
+            height: 2px
+            left: 0
+            width: 100%
+            background: $grey
+
+        .cursor
+            position: absolute
+            top: 1px
+            height: 8px
+            width: 8px
+            left: 0
+            margin-left: -4px
+            border-radius: 100%
+            background: $grey

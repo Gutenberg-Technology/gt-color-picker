@@ -1,0 +1,29 @@
+<html ng-app="gt.colorpicker">
+    <head>
+        <title>GT Wysiwyg Light directive</title>
+        <link rel="stylesheet" href="dist/gtColorPicker.css">
+
+        <style type="text/css">
+
+        #demo {
+            margin-top: 100px;
+        }
+
+        </style>
+    </head>
+    <body>
+
+    <div id="demo">
+        <gt-color-picker
+            color="ctrl.color"
+            show-input="true"
+            inline-picker="true"
+            ng-click="ctrl.applyBorderColor(ctrl.color)"
+        ></gt-color-picker>
+    </div>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="dist/gtColorPicker.js"></script>
+
+    </body>
+</html>
