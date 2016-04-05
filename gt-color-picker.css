@@ -1,5 +1,8 @@
 .gt-color-picker {
   position: relative; }
+  .gt-color-picker.color-picker-inline .color-picker-container {
+    position: static;
+    box-shadow: none; }
   .gt-color-picker .color-picker-container {
     position: absolute;
     white-space: nowrap;
