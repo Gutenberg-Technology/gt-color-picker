@@ -2,8 +2,11 @@
 
     position: relative
 
-    $input-height: 24px
-    $grey: gray
+    &.color-picker-inline
+
+        .color-picker-container
+            position: static
+            box-shadow: none
 
     .color-picker-container
         position: absolute
@@ -26,8 +29,8 @@
         cursor: not-allowed
 
     .color-picker-button
-        height: $input-height
-        width: $input-height
+        height: 24px
+        width: 24px
         border: 1px solid rgba(black, .3)
         cursor: pointer
 
@@ -88,7 +91,7 @@
             height: 2px
             left: 0
             width: 100%
-            background: $grey
+            background: gray
 
         .cursor
             position: absolute
@@ -98,4 +101,4 @@
             left: 0
             margin-left: -4px
             border-radius: 100%
-            background: $grey
+            background: gray
