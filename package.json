@@ -23,17 +23,17 @@
   },
   "homepage": "https://github.com/Gutenberg-Technology/gt-color-picker#readme",
   "dependencies": {
-    "coffee-script": "1.10.0",
+    "coffee-script": "1.11.0",
     "gulp": "3.9.1",
-    "gulp-angular-templatecache": "1.8.0",
-    "gulp-autoprefixer": "3.1.0",
-    "gulp-coffee": "2.3.1",
+    "gulp-angular-templatecache": "2.0.0",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-coffee": "2.3.2",
     "gulp-coffeelint": "0.6.0",
     "gulp-concat": "^2.6.0",
-    "gulp-htmlmin": "1.3.0",
+    "gulp-htmlmin": "3.0.0",
     "gulp-initial-cleaning": "0.0.1",
     "gulp-plumber": "1.1.0",
-    "gulp-sass": "2.2.0",
-    "gulp-sass-lint": "1.1.1"
+    "gulp-sass": "2.3.2",
+    "gulp-sass-lint": "1.2.0"
   }
 }
