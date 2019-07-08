@@ -48,7 +48,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "node ./node_modules/angular-precommit/index.js"
+      "commit-msg": "node ./node_modules/angular-precommit/index.js $HUSKY_GIT_PARAMS"
     }
   }
 }
