@@ -4,8 +4,7 @@
   "description": "AngularJS color picker directive based on flexi-color-picker",
   "main": "gt-color-picker.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "ln -sf ../../node_modules/angular-precommit/index.js .git/hooks/commit-msg"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,16 @@
     "url": "https://github.com/Gutenberg-Technology/gt-color-picker/issues"
   },
   "homepage": "https://github.com/Gutenberg-Technology/gt-color-picker#readme",
+  "files": [
+    "gt-color-picker.js",
+    "gt-color-picker.css"
+  ],
   "dependencies": {
+    "angular": "^1.4",
+    "flexi-color-picker": "1.0.1"
+  },
+  "devDependencies": {
+    "angular-precommit": "^1.0.3",
     "coffee-script": "1.11.0",
     "gulp": "3.9.1",
     "gulp-angular-templatecache": "2.0.0",
@@ -35,9 +43,12 @@
     "gulp-initial-cleaning": "0.0.1",
     "gulp-plumber": "1.1.0",
     "gulp-sass": "2.3.2",
-    "gulp-sass-lint": "1.2.0"
+    "gulp-sass-lint": "1.2.0",
+    "husky": "2.7.0"
   },
-  "devDependencies": {
-    "angular-precommit": "^1.0.3"
+  "husky": {
+    "hooks": {
+      "commit-msg": "node ./node_modules/angular-precommit/index.js"
+    }
   }
 }
