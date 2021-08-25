@@ -1,4 +1,5 @@
 angular.module('gt.colorpicker', []).directive 'gtColorPicker', ($parse) ->
+
     _hexToRgba = (color) ->
         if color.length is 4 # #eee vs #eeeeee
             colors = color.match(/[a-f0-9]/g).map (c) -> parseInt "#{c}#{c}", 16
@@ -106,8 +107,6 @@ angular.module('gt.colorpicker', []).directive 'gtColorPicker', ($parse) ->
         colorPicker = elem[0].querySelector '.color-picker-container .color-picker-color'
 
         scope.toggle = (e) ->
-            console.log '??'
-
             e?.stopPropagation()
             return if attrs['disabled']
             scope.open = not scope.open
