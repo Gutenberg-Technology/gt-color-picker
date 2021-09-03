@@ -32,7 +32,7 @@
     }
   },
   "dependencies": {
-    "angular": "^1.4",
+    "angular": "1.8.2",
     "flexi-color-picker": "1.0.1"
   },
   "devDependencies": {
