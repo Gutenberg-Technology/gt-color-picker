@@ -1,5 +1,5 @@
 {
-  "name": "gt-color-picker",
+  "name": "@gutenberg-technology/gt-color-picker",
   "version": "1.0.6",
   "description": "AngularJS color picker directive based on flexi-color-picker",
   "keywords": [
@@ -25,6 +25,7 @@
   "main": "gt-color-picker.js",
   "scripts": {
     "build": "gulp",
+    "prepack": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
@@ -51,5 +52,8 @@
     "gulp-sass": "2.3.2",
     "gulp-sass-lint": "1.2.0",
     "husky": "2.7.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
