@@ -1,6 +1,6 @@
 {
   "name": "@gutenberg-technology/gt-color-picker",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "AngularJS color picker directive based on flexi-color-picker",
   "keywords": [
     "angularjs",
